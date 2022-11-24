@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Form">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/insertheading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+
+        android:text="Data Insert Form"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="4dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fieldUpdateName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/insertheading">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/updateName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter Name"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="193dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fieldUpdatePhone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fieldUpdateName">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/updatePhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter Phone"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="193dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fieldUpdateAddress"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fieldUpdatePhone">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/updateAddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter Address"
+            android:inputType="textPostalAddress"
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="193dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fieldUpdateLocation"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fieldUpdateAddress">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/updateLocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter Location"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="193dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fieldUpdateLocation" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
